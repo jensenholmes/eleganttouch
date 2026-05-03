@@ -1,0 +1,130 @@
+/* ============================================================
+   SmartSite Design — Modal Styles
+   Shared across ALL client demo sites
+   ============================================================ */
+
+#ss-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+}
+
+/* The .ss-visible class is added by modal.js to show the modal */
+#ss-overlay.ss-visible {
+  display: flex;
+}
+
+#ss-modal {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 44px 40px;
+  max-width: 440px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+  position: relative;
+}
+
+/* Small label at the top */
+#ss-modal .ss-tag {
+  display: inline-block;
+  background: #f0a500;
+  color: #1a1a1a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 22px;
+}
+
+#ss-modal h2 {
+  font-size: 27px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+#ss-modal .ss-body {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.65;
+  margin-bottom: 22px;
+}
+
+/* Large price display */
+#ss-modal .ss-price {
+  font-size: 42px;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin-bottom: 28px;
+  line-height: 1;
+}
+
+#ss-modal .ss-price .ss-price-amount {
+  color: #f0a500;
+}
+
+#ss-modal .ss-price .ss-price-note {
+  font-size: 15px;
+  font-weight: 500;
+  color: #888;
+}
+
+/* Buy Now button */
+.ss-btn-buy {
+  display: block;
+  width: 100%;
+  background: #f0a500;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 20px;
+  border-radius: 9px;
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: background 0.2s, transform 0.15s;
+  box-sizing: border-box;
+}
+
+.ss-btn-buy:hover {
+  background: #d4920a;
+  transform: translateY(-1px);
+}
+
+/* Browse Website button */
+.ss-btn-browse {
+  display: block;
+  width: 100%;
+  background: none;
+  border: 2px solid #ddd;
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px 20px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.ss-btn-browse:hover {
+  border-color: #aaa;
+  color: #333;
+}
+
+/* Small print at the bottom */
+#ss-modal .ss-fine {
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 18px;
+  line-height: 1.6;
+}
